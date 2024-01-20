@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Test document</title>
+    <url>/2024/01/18/First-Post/</url>
+    <content><![CDATA[<p>This is umm err the first post, Star rail players are retarded (Including myself)</p>
+<h3 id="Blade-Users"><a href="#Blade-Users" class="headerlink" title="Blade Users"></a>Blade Users</h3><h3 id="How-to-use-blade"><a href="#How-to-use-blade" class="headerlink" title="How to use blade?"></a>How to use blade?</h3><p>Blade is a very strong character, you need good relics</p>
+<h3 id="Why-is-Blade-good"><a href="#Why-is-Blade-good" class="headerlink" title="Why is Blade good?"></a>Why is Blade good?</h3><p>Blade has a lot of damage</p>
+<h3 id="Lukas-drinking-beer-and-getting-drunk"><a href="#Lukas-drinking-beer-and-getting-drunk" class="headerlink" title="Lukas drinking beer and getting drunk"></a>Lukas drinking beer and getting drunk</h3><p><img src="/images/Lukasbeer.jpg" alt="lukasbeer"></p>
+]]></content>
+      <tags>
+        <tag>People</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Site Code of Conduct</title>
+    <url>/2024/01/17/Site-Code-of-Conduct/</url>
+    <content><![CDATA[<h3 id="Some-basic-rules"><a href="#Some-basic-rules" class="headerlink" title="Some basic rules:"></a>Some basic rules:</h3><ul>
+<li>This site is absolutely sfw, nsfw comments will be blocked as possibly IP banned</li>
+<li>Other than that, please do not DDOS the site</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Feature suggestion</title>
+    <url>/2024/01/20/feature-suggestion/</url>
+    <content><![CDATA[<h3 id="What-features-to-be-added"><a href="#What-features-to-be-added" class="headerlink" title="What features to be added?"></a>What features to be added?</h3><ul>
+<li>Study Materials?</li>
+<li>Star Rail stuff?</li>
+<li>BBIS related things?</li>
+<li>…</li>
+</ul>
+<h3 id="What-feature-has-already-been-added"><a href="#What-feature-has-already-been-added" class="headerlink" title="What feature has already been added?"></a>What feature has already been added?</h3><ul>
+<li>Google Analytics</li>
+<li>Microsoft Clarity</li>
+<li>Message system powered by Crisp </li>
+<li>Comment section powered by DISQUS (Guest comment is permitted)</li>
+<li>Various appearance enhancement</li>
+<li>Various performance enhancement</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Tech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Website Building</title>
+    <url>/2024/01/18/Website-Building/</url>
+    <content><![CDATA[<h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>This website is based on Hexo framework<br>Using the butterfly theme of hexo<br>Future deployment on the cloud via WordPress</p>
+]]></content>
+      <tags>
+        <tag>Tech</tag>
+      </tags>
+  </entry>
+</search>
