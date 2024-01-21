@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>School Networking | 山外有山</title><meta name="author" content="Evan Zhu"><meta name="copyright" content="Evan Zhu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="This post is a view of my own on the school networking infrastructure and some own understanding and knowledge School networking capabilities Anti DDOS Firewall protection against viruses  Cached cont">
+<meta property="og:type" content="article">
+<meta property="og:title" content="School Networking">
+<meta property="og:url" content="https://evanzhu0504.github.io/2024/01/21/School-Networking/index.html">
+<meta property="og:site_name" content="山外有山">
+<meta property="og:description" content="This post is a view of my own on the school networking infrastructure and some own understanding and knowledge School networking capabilities Anti DDOS Firewall protection against viruses  Cached cont">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://evanzhu0504.github.io/img/googlecolor.png">
+<meta property="article:published_time" content="2024-01-21T15:44:36.000Z">
+<meta property="article:modified_time" content="2024-01-21T17:37:38.523Z">
+<meta property="article:author" content="Evan Zhu">
+<meta property="article:tag" content="Tech">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://evanzhu0504.github.io/img/googlecolor.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://evanzhu0504.github.io/2024/01/21/School-Networking/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//www.clarity.ms"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-T0KET4MHZT"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-T0KET4MHZT');
+</script><script>(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "koq78a544u");</script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"You have switched to Traditional Chinese","cht_to_chs":"You have switched to Simplified Chinese","day_to_night":"You have switched to Dark Mode","night_to_day":"You have switched to Light Mode","bgLight":"#dda0dd","bgDark":"#dda0dd","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'School Networking',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-01-21 18:37:38'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><span> Archives</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/purplemountain.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="山外有山"><span class="site-name">山外有山</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><span> Archives</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">School Networking</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-01-21T15:44:36.000Z" title="Created 2024-01-21 16:44:36">2024-01-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-01-21T17:37:38.523Z" title="Updated 2024-01-21 18:37:38">2024-01-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">871</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>5mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="School Networking"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a class="disqus-comment-count" href="https://evanzhu0504.github.io/2024/01/21/School-Networking/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>This post is a view of my own on the school networking infrastructure and some own understanding and knowledge</p>
+<h3 id="School-networking-capabilities"><a href="#School-networking-capabilities" class="headerlink" title="School networking capabilities"></a>School networking capabilities</h3><ul>
+<li>Anti DDOS</li>
+<li>Firewall protection against viruses </li>
+<li>Cached content for educational purposes</li>
+<li>Virtual machine access for easy program utilization (<a target="_blank" rel="noopener" href="https://rds.bbis.de/rdweb/webclient/">https://rds.bbis.de/rdweb/webclient/</a>)</li>
+<li>Web filters against blackmail etc.</li>
+<li>Large network coverage, averaging 90mbps per client, I don’t know how many clients are there but that’s a lot of bandwidth</li>
+<li>Many others to be discovered</li>
+</ul>
+<h3 id="Basic-client-handshake"><a href="#Basic-client-handshake" class="headerlink" title="Basic client handshake"></a>Basic client handshake</h3><p>Believe it or not, any device that has internet connection is required to have a name. For example, “Lukas Macbook Pro,” this is often defaulted by the Operating System<br>of your device. This applies to any smart device — for example, those lights that can be remote controlled might have a name of “Light bulb1,”<br>you might have a fridge that can be monitored when you are out on a holiday, its name might be “Kitchen fridge.” These names might sound like<br>nothing, but it serves as an identity tag in a lot of situations when it’s communicating with something else, not limited to internet connection,<br>any NFC, bluetooth, radio connection. Basically, one of the clients initiates a handshake, stating: “Hi, I am Evan Laptop, I would like to connect<br>with you, what is your name?” and the other client might refuse the connection based on firewall policies etc., otherwise it will report back: “Hi Evan laptop<br>I would love to connect with you, my name is Lukas laptop!” Then the connection is established, then the two clients start sending data packs to each other, there is little difference between various connection methods,<br>but the framework is basically the same. </p>
+<p>Now we have covered the basics of communication between two smart devices, let’s simulate what is going to happen when you connect to the school network.<br>As you are the one, trying to establish a connection to your nearest Access point, you start off by saying your name, “Hey Access point, I am Evan’s laptop,<br>I would like to connect to you and obtain internet connection from you.” Unless there is some mysterious firewall policy that is stopping the access<br>point from offering you connection, you the client should get a reply from the access point asking for authentication, depending on the method WPA, WPA2 etc. You should be<br>asked for a proof of identity to prove that you have the necessary access to access the internet from this network, I am assuming<br>you have the correct password here, you sent that info as a data pack to the access point, and the authentication script will read the words<br>you sent and interpret it as correct or not. After you have established connection to the network, a lot of things have passed during this simple process. </p>
+<p>Modern network infrastructure is not advanced enough to just recognize you as plain text such as “Evan laptop”, you might have heard about the term “binary”<br>as in 100110101, this is often interpreted as “The language of computers,” Well that is only half true now days, computing power has increased exponentially<br>since the first computer was invented. Now days, many other formats of things can be understood computers such as hex and decimals. There are a few standards<br>to numbers used in networking. First of all, how do other things recognize you on the internet? The second you establish connection with the access point,<br>you are assigned an IP address, a MAC address and a few other parameters including your plain text name “Evan laptop” This is mostly conducted by an automated<br>process known as DHCP nowadays, it can avoid conflict in one network and other really nice to have features for easy management, notice that an IP address and<br>a MAC address cannot be repeated in the same network, so imagine having to assign everything that connects to the network an IP address and a MAC address, that’s<br>a nightmare! So DHCP is the industrial standard now for assigning parameters to clients. </p>
+<p>Numbers are also way easier to read than words, such as 24 and twenty-four, for both humans and machines, so that’s why most programming language does not accept<br>plain text numbers. Numbers are also faster to index and to search, all the clients are stored like a library in the memory of the network; it got to be organized<br>somehow, right? Since 1 &lt; 2 is much faster than one &lt; two for machines, why not? </p>
+<h3 id="How-does-the-school-see-what-you-are-up-to"><a href="#How-does-the-school-see-what-you-are-up-to" class="headerlink" title="How does the school see what you are up to?"></a>How does the school see what you are up to?</h3><p>IP address not only applies to clients, it also applies to websites, this is what a DNS server does, future article on that, but it basically translates, for example,<br>“Google.com” in to an address that can be used to reach the actual Google server. That process is being captured by the school firewall constantly as is linked to your<br>IP address of your own device. You can use a VPN service to encrypt this entire process, but I’m afraid that no method will completely hide your internet traffic from<br>the school firewall or any firewall including the ones in your house. Since the data packs between you and the website is constantly monitored and captured by your router<br>and&#x2F;or the firewall for the network. </p>
+<p><img src="/images/chrome.jpg" alt="chrome.jpg"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://evanzhu0504.github.io">Evan Zhu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://evanzhu0504.github.io/2024/01/21/School-Networking/">https://evanzhu0504.github.io/2024/01/21/School-Networking/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Tech/">Tech</a></div><div class="post_share"><div class="social-share" data-image="/img/googlecolor.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/01/20/Python-trigonometry-calculator/" title="Python trigonometry calculator"><img class="cover" src="/img/python.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next</div><div class="next_info">Python trigonometry calculator</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2024/01/20/Python-trigonometry-calculator/" title="Python trigonometry calculator"><img class="cover" src="/img/python.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-20</div><div class="title">Python trigonometry calculator</div></div></a></div><div><a href="/2024/01/20/feature-suggestion/" title="Feature suggestion"><img class="cover" src="/img/defcover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-20</div><div class="title">Feature suggestion</div></div></a></div><div><a href="/2024/01/18/Website-Building/" title="Website Building"><img class="cover" src="/img/defcover.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-18</div><div class="title">Website Building</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Evan Zhu</div><div class="author-info__description">桜が散る</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://www.instagram.com/evanzhugg/"><i class="fab fa-instagram"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/evanzhu0504" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:evan20080504@hotmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">I don't know what to put over here</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#School-networking-capabilities"><span class="toc-number">1.</span> <span class="toc-text">School networking capabilities</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic-client-handshake"><span class="toc-number">2.</span> <span class="toc-text">Basic client handshake</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-does-the-school-see-what-you-are-up-to"><span class="toc-number">3.</span> <span class="toc-text">How does the school see what you are up to?</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/01/21/School-Networking/" title="School Networking"><img src="/img/googlecolor.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="School Networking"/></a><div class="content"><a class="title" href="/2024/01/21/School-Networking/" title="School Networking">School Networking</a><time datetime="2024-01-21T15:44:36.000Z" title="Created 2024-01-21 16:44:36">2024-01-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/20/Python-trigonometry-calculator/" title="Python trigonometry calculator"><img src="/img/python.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python trigonometry calculator"/></a><div class="content"><a class="title" href="/2024/01/20/Python-trigonometry-calculator/" title="Python trigonometry calculator">Python trigonometry calculator</a><time datetime="2024-01-20T22:03:47.000Z" title="Created 2024-01-20 23:03:47">2024-01-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/20/feature-suggestion/" title="Feature suggestion"><img src="/img/defcover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Feature suggestion"/></a><div class="content"><a class="title" href="/2024/01/20/feature-suggestion/" title="Feature suggestion">Feature suggestion</a><time datetime="2024-01-20T09:28:01.000Z" title="Created 2024-01-20 10:28:01">2024-01-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/18/Website-Building/" title="Website Building"><img src="/img/defcover.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Website Building"/></a><div class="content"><a class="title" href="/2024/01/18/Website-Building/" title="Website Building">Website Building</a><time datetime="2024-01-18T19:51:32.000Z" title="Created 2024-01-18 20:51:32">2024-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/01/18/First-Post/" title="Test document"><img src="/img/blade.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Test document"/></a><div class="content"><a class="title" href="/2024/01/18/First-Post/" title="Test document">Test document</a><time datetime="2024-01-18T19:06:50.000Z" title="Created 2024-01-18 20:06:50">2024-01-18</time></div></div></div></div></div></div></main><footer id="footer" style="background: url(/img/footer.jpg)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Evan Zhu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">I love computer science</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="Chat"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(() => {
+  const disqus_config = function () {
+    this.page.url = 'https://evanzhu0504.github.io/2024/01/21/School-Networking/'
+    this.page.identifier = '/2024/01/21/School-Networking/'
+    this.page.title = 'School Networking'
+  }
+
+  const disqusReset = () => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  btf.addGlobalFn('themeChange', disqusReset, 'disqus')
+
+  const loadDisqus = () =>{
+    if (window.DISQUS) disqusReset()
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://evan0504.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=evan0504&api_key=Mwv2I5VJG2So1GVThUh51htn85bC9S6xxqfhchtm0VmzsIOWT5fKTfqfw0Psh2MF&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if ('Disqus' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      GLOBAL_CONFIG_SITE.isPost && getCount()
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script>(() => {
+  window.$crisp = [];
+  window.CRISP_WEBSITE_ID = "9931b533-b12d-4de1-b55c-b5e22199b37c";
+  (function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+  })();
+  $crisp.push(["safe", true])
+
+  const isChatBtn = true
+  const isChatHideShow = true
+
+  if (isChatBtn) {
+    const open = () => {
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+    }
+
+    const close = () => {
+      $crisp.push(["do", "chat:hide"])
+    }
+
+    close()
+    $crisp.push(["on", "chat:closed", function() {
+      close()
+    }])
+
+    window.chatBtnFn = () => {
+      $crisp.is("chat:visible") ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        $crisp.push(["do", "chat:hide"])
+      },
+      show: () => {
+        $crisp.push(["do", "chat:show"])
+      }
+    }
+  }
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: true,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', 'G-T0KET4MHZT', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"left","width":220,"height":400,"hOffset":0,"vOffset":-100},"mobile":{"show":true},"react":{"opacity":0.85},"log":false});</script></body></html>
