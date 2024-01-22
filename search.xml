@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Python trigonometry calculator</title>
-    <url>/2024/01/20/Python-trigonometry-calculator/</url>
-    <content><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description:"></a>Description:</h3><p>This is a post about the development of a suite of trigonometry calculations using various different modules in Python</p>
-<h3 id="Link-to-Github-repository"><a href="#Link-to-Github-repository" class="headerlink" title="Link to Github repository:"></a>Link to Github repository:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc">https://github.com/evanzhu0504/Trigonometry-Calc</a></p>
-<h3 id="Link-to-code-file"><a href="#Link-to-code-file" class="headerlink" title="Link to code file:"></a>Link to code file:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py">https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py</a></p>
-<h3 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h3><ul>
-<li>Pythagoras Theorem</li>
-<li>Sin, Cos, Tan for unknown angle and sides</li>
-<li>Laws of Sine, Cosine</li>
-<li>Area of a triangle using sine laws </li>
-<li>Graphing calculator supporting Sine and Cosine waves</li>
-<li>Basic authentication system (username, password) via json readable writable file</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Tech</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Test document</title>
     <url>/2024/01/18/First-Post/</url>
     <content><![CDATA[<p>This is umm err the first post, Star rail players are retarded (Including myself)</p>
@@ -50,6 +31,25 @@
 <p>Numbers are also way easier to read than words, such as 24 and twenty-four, for both humans and machines, so that’s why most programming language does not accept<br>plain text numbers. Numbers are also faster to index and to search, all the clients are stored like a library in the memory of the network; it got to be organized<br>somehow, right? Since 1 &lt; 2 is much faster than one &lt; two for machines, why not? </p>
 <h3 id="How-does-the-school-see-what-you-are-up-to"><a href="#How-does-the-school-see-what-you-are-up-to" class="headerlink" title="How does the school see what you are up to?"></a>How does the school see what you are up to?</h3><p>IP address not only applies to clients, it also applies to websites, this is what a DNS server does, future article on that, but it basically translates, for example,<br>“Google.com” in to an address that can be used to reach the actual Google server. That process is being captured by the school firewall constantly as is linked to your<br>IP address of your own device. You can use a VPN service to encrypt this entire process, but I’m afraid that no method will completely hide your internet traffic from<br>the school firewall or any firewall including the ones in your house. Since the data packs between you and the website is constantly monitored and captured by your router<br>and&#x2F;or the firewall for the network. </p>
 <p><img src="/images/chrome.jpg" alt="chrome.jpg"></p>
+]]></content>
+      <tags>
+        <tag>Tech</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python trigonometry calculator</title>
+    <url>/2024/01/20/Python-trigonometry-calculator/</url>
+    <content><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description:"></a>Description:</h3><p>This is a post about the development of a suite of trigonometry calculations using various different modules in Python</p>
+<h3 id="Link-to-Github-repository"><a href="#Link-to-Github-repository" class="headerlink" title="Link to Github repository:"></a>Link to Github repository:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc">https://github.com/evanzhu0504/Trigonometry-Calc</a></p>
+<h3 id="Link-to-code-file"><a href="#Link-to-code-file" class="headerlink" title="Link to code file:"></a>Link to code file:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py">https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py</a></p>
+<h3 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h3><ul>
+<li>Pythagoras Theorem</li>
+<li>Sin, Cos, Tan for unknown angle and sides</li>
+<li>Laws of Sine, Cosine</li>
+<li>Area of a triangle using sine laws </li>
+<li>Graphing calculator supporting Sine and Cosine waves</li>
+<li>Basic authentication system (username, password) via json readable writable file</li>
+</ul>
 ]]></content>
       <tags>
         <tag>Tech</tag>
