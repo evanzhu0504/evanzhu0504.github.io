@@ -13,6 +13,25 @@
       </tags>
   </entry>
   <entry>
+    <title>Python trigonometry calculator</title>
+    <url>/2024/01/20/Python-trigonometry-calculator/</url>
+    <content><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description:"></a>Description:</h3><p>This is a post about the development of a suite of trigonometry calculations using various different modules in Python</p>
+<h3 id="Link-to-Github-repository"><a href="#Link-to-Github-repository" class="headerlink" title="Link to Github repository:"></a>Link to Github repository:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc">https://github.com/evanzhu0504/Trigonometry-Calc</a></p>
+<h3 id="Link-to-code-file"><a href="#Link-to-code-file" class="headerlink" title="Link to code file:"></a>Link to code file:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py">https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py</a></p>
+<h3 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h3><ul>
+<li>Pythagoras Theorem</li>
+<li>Sin, Cos, Tan for unknown angle and sides</li>
+<li>Laws of Sine, Cosine</li>
+<li>Area of a triangle using sine laws </li>
+<li>Graphing calculator supporting Sine and Cosine waves</li>
+<li>Basic authentication system (username, password) via json readable writable file</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Tech</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>School Networking</title>
     <url>/2024/01/21/School-Networking/</url>
     <content><![CDATA[<p>This post is a view of my own on the school networking infrastructure and some own understanding and knowledge</p>
@@ -37,32 +56,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Python trigonometry calculator</title>
-    <url>/2024/01/20/Python-trigonometry-calculator/</url>
-    <content><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description:"></a>Description:</h3><p>This is a post about the development of a suite of trigonometry calculations using various different modules in Python</p>
-<h3 id="Link-to-Github-repository"><a href="#Link-to-Github-repository" class="headerlink" title="Link to Github repository:"></a>Link to Github repository:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc">https://github.com/evanzhu0504/Trigonometry-Calc</a></p>
-<h3 id="Link-to-code-file"><a href="#Link-to-code-file" class="headerlink" title="Link to code file:"></a>Link to code file:</h3><p><a href="https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py">https://github.com/evanzhu0504/Trigonometry-Calc/blob/main/trigcal.py</a></p>
-<h3 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h3><ul>
-<li>Pythagoras Theorem</li>
-<li>Sin, Cos, Tan for unknown angle and sides</li>
-<li>Laws of Sine, Cosine</li>
-<li>Area of a triangle using sine laws </li>
-<li>Graphing calculator supporting Sine and Cosine waves</li>
-<li>Basic authentication system (username, password) via json readable writable file</li>
-</ul>
+    <title>Website Building</title>
+    <url>/2024/01/18/Website-Building/</url>
+    <content><![CDATA[<h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>This website is based on Hexo framework<br>Using the butterfly theme of hexo<br>Future deployment on the cloud via WordPress</p>
 ]]></content>
       <tags>
         <tag>Tech</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Site Code of Conduct</title>
-    <url>/2024/01/17/Site-Code-of-Conduct/</url>
-    <content><![CDATA[<h3 id="Some-basic-rules"><a href="#Some-basic-rules" class="headerlink" title="Some basic rules:"></a>Some basic rules:</h3><ul>
-<li>This site is absolutely sfw, nsfw comments will be blocked as possibly IP banned</li>
-<li>Other than that, please do not DDOS the site</li>
-</ul>
-]]></content>
   </entry>
   <entry>
     <title>Feature suggestion</title>
@@ -87,12 +87,12 @@
       </tags>
   </entry>
   <entry>
-    <title>Website Building</title>
-    <url>/2024/01/18/Website-Building/</url>
-    <content><![CDATA[<h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>This website is based on Hexo framework<br>Using the butterfly theme of hexo<br>Future deployment on the cloud via WordPress</p>
+    <title>Site Code of Conduct</title>
+    <url>/2024/01/17/Site-Code-of-Conduct/</url>
+    <content><![CDATA[<h3 id="Some-basic-rules"><a href="#Some-basic-rules" class="headerlink" title="Some basic rules:"></a>Some basic rules:</h3><ul>
+<li>This site is absolutely sfw, nsfw comments will be blocked as possibly IP banned</li>
+<li>Other than that, please do not DDOS the site</li>
+</ul>
 ]]></content>
-      <tags>
-        <tag>Tech</tag>
-      </tags>
   </entry>
 </search>
