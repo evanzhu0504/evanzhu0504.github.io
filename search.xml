@@ -56,6 +56,15 @@
       </tags>
   </entry>
   <entry>
+    <title>Site Code of Conduct</title>
+    <url>/2024/01/17/Site-Code-of-Conduct/</url>
+    <content><![CDATA[<h3 id="Some-basic-rules"><a href="#Some-basic-rules" class="headerlink" title="Some basic rules:"></a>Some basic rules:</h3><ul>
+<li>This site is absolutely sfw, nsfw comments will be blocked as possibly IP banned</li>
+<li>Other than that, please do not DDOS the site</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>Website Building</title>
     <url>/2024/01/18/Website-Building/</url>
     <content><![CDATA[<h3 id="Framework"><a href="#Framework" class="headerlink" title="Framework"></a>Framework</h3><p>This website is based on Hexo framework<br>Using the butterfly theme of hexo<br>Future deployment on the cloud via WordPress</p>
@@ -85,14 +94,5 @@
       <tags>
         <tag>Tech</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Site Code of Conduct</title>
-    <url>/2024/01/17/Site-Code-of-Conduct/</url>
-    <content><![CDATA[<h3 id="Some-basic-rules"><a href="#Some-basic-rules" class="headerlink" title="Some basic rules:"></a>Some basic rules:</h3><ul>
-<li>This site is absolutely sfw, nsfw comments will be blocked as possibly IP banned</li>
-<li>Other than that, please do not DDOS the site</li>
-</ul>
-]]></content>
   </entry>
 </search>
